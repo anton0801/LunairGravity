@@ -253,7 +253,7 @@ struct MainScreen: View {
 
             HStack(spacing: 30) {
                 QuickModeBubble(title: "Breathing", image: "lungs.fill") { onNavigate(.breathing) }
-                QuickModeBubble(title: "Sleep Music", image: "moon.stars.fill") { onNavigate(.sounds) }
+                QuickModeBubble(title: "Sleep", image: "moon.stars.fill") { onNavigate(.sounds) }
                 QuickModeBubble(title: "Waves", image: "waveform") { onNavigate(.sounds) }
             }
 
