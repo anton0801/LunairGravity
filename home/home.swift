@@ -40,9 +40,9 @@ struct FloatingBubble: View {
             .overlay(
                 Circle()
                     .fill(RadialGradient(colors: [.white.opacity(0.55), .clear],
-                                       center: .topLeading,
-                                       startRadius: 10,
-                                       endRadius: size/2))
+                                         center: .topLeading,
+                                         startRadius: 10,
+                                         endRadius: size/2))
                     .scaleEffect(0.8)
             )
             .shadow(color: color.opacity(0.7), radius: 40)
@@ -105,7 +105,7 @@ struct BubbleButton: View {
         Button(action: action) {
             Circle()
                 .fill(LinearGradient(colors: [Color(hex: "FFDDAA"), Color(hex: "FFB84D")],
-                                   startPoint: .topLeading, endPoint: .bottomTrailing))
+                                     startPoint: .topLeading, endPoint: .bottomTrailing))
                 .frame(width: 170, height: 170)
                 .shadow(color: Color(hex: "FFDDAA").opacity(0.9), radius: 60)
                 .overlay(Text(title).font(.title.bold()).foregroundColor(Color(hex: "0A0033")))
@@ -168,7 +168,7 @@ struct SleepRelaxView: View {
     @State private var currentScreen: Screen = .main
     @State private var screenOpacity = 1.0
 
-    enum Screen { case main, breathing, sounds, sleepTimer, settings }
+    enum Screen { case main, breathing, sleepTimer, settings }
 
     private var navigateTo: (Screen) -> Void {
         { screen in
@@ -199,8 +199,6 @@ struct SleepRelaxView: View {
                 MainScreen(onNavigate: navigateTo)
             } else if currentScreen == .breathing {
                 BreathingScreen(onNavigate: navigateTo)
-            } else if currentScreen == .sounds {
-                SoundsScreen(onNavigate: navigateTo)
             } else if currentScreen == .sleepTimer {
                 SleepTimerScreen(onNavigate: navigateTo, screenOpacity: $screenOpacity)
             } else if currentScreen == .settings {
@@ -253,8 +251,6 @@ struct MainScreen: View {
 
             HStack(spacing: 30) {
                 QuickModeBubble(title: "Breathing", image: "lungs.fill") { onNavigate(.breathing) }
-                QuickModeBubble(title: "Sleep", image: "moon.stars.fill") { onNavigate(.sounds) }
-                QuickModeBubble(title: "Waves", image: "waveform") { onNavigate(.sounds) }
             }
 
             Spacer()
@@ -298,7 +294,7 @@ struct BreathingScreen: View {
 
             Spacer()
 
-            Button { onNavigate(.sounds) } label: {
+            Button { onNavigate(.sleepTimer) } label: {
                 Circle()
                     .fill(Color(hex: "FFDDAA"))
                     .frame(width: 80, height: 80)
@@ -314,44 +310,6 @@ struct BreathingScreen: View {
                 else { scale = 1.0; breathText = "Exhale..." }
                 phase = (phase + 1) % 3
             }
-        }
-    }
-}
-
-struct SoundsScreen: View {
-    let onNavigate: (SleepRelaxView.Screen) -> Void
-    let sounds = ["Rain", "Ocean", "Fireplace", "Wind", "Silence", "Lullaby"]
-    @State private var selected: String?
-
-    var body: some View {
-        VStack {
-            BackButton { onNavigate(.main) }
-
-            Spacer()
-
-            Text("Choose atmosphere")
-                .font(.title.bold())
-                .foregroundColor(.white)
-                .padding(.horizontal, 40)
-
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 30), count: 3), spacing: 35) {
-                ForEach(sounds, id: \.self) { s in
-                    Button { selected = s } label: {
-                        Text(s)
-                            .font(.title2)
-                            .foregroundColor(.white)
-                            .frame(width: 100, height: 100)
-                            .background(Circle().fill(selected == s ? Color(hex: "00E6C6") : Color.white.opacity(0.15))
-                                .shadow(color: selected == s ? Color(hex: "00E6C6").opacity(0.8) : .clear, radius: 30))
-                    }
-                }
-            }
-            .padding(.horizontal, 30)
-
-            BubbleButton(title: "Start atmosphere") { onNavigate(.sleepTimer) }
-                .padding(.top, 60)
-
-            Spacer()
         }
     }
 }
