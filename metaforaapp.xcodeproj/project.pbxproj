@@ -6,7 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F9B150E2EF310AD00F02658 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8F9B150D2EF310AD00F02658 /* Lottie */; };
+		8F9B15112EF310B600F02658 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8F9B15102EF310B600F02658 /* AppsFlyerLib */; };
+		8F9B15142EF310BE00F02658 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8F9B15132EF310BE00F02658 /* ConfettiSwiftUI */; };
+		8F9B15172EF3111900F02658 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F9B15162EF3111900F02658 /* FirebaseMessaging */; };
+		8F9B15452EF446EF00F02658 /* NotificationsServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F9B153E2EF446EF00F02658 /* NotificationsServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F9B154D2EF4470200F02658 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F9B154C2EF4470200F02658 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		8F9B15432EF446EF00F02658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956FBF052ED9A974008FD178 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F9B153D2EF446EF00F02658;
+			remoteInfo = NotificationsServiceExtension;
+		};
 		956FBF1B2ED9A976008FD178 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 956FBF052ED9A974008FD178 /* Project object */;
@@ -23,15 +39,58 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8F9B154A2EF446EF00F02658 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F9B15452EF446EF00F02658 /* NotificationsServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8F9B153E2EF446EF00F02658 /* NotificationsServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationsServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		956FBF0D2ED9A974008FD178 /* metaforaapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metaforaapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956FBF1A2ED9A976008FD178 /* metaforaappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metaforaappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		956FBF242ED9A976008FD178 /* metaforaappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metaforaappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F9B15192EF3112700F02658 /* Exceptions for "metaforaapp" folder in "metaforaapp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 956FBF0C2ED9A974008FD178 /* metaforaapp */;
+		};
+		8F9B15492EF446EF00F02658 /* Exceptions for "NotificationsServiceExtension" folder in "NotificationsServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8F9B153D2EF446EF00F02658 /* NotificationsServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8F9B153F2EF446EF00F02658 /* NotificationsServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F9B15492EF446EF00F02658 /* Exceptions for "NotificationsServiceExtension" folder in "NotificationsServiceExtension" target */,
+			);
+			path = NotificationsServiceExtension;
+			sourceTree = "<group>";
+		};
 		956FBF0F2ED9A974008FD178 /* metaforaapp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F9B15192EF3112700F02658 /* Exceptions for "metaforaapp" folder in "metaforaapp" target */,
+			);
 			path = metaforaapp;
 			sourceTree = "<group>";
 		};
@@ -53,10 +112,22 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F9B153B2EF446EF00F02658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F9B154D2EF4470200F02658 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		956FBF0A2ED9A974008FD178 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9B15172EF3111900F02658 /* FirebaseMessaging in Frameworks */,
+				8F9B15142EF310BE00F02658 /* ConfettiSwiftUI in Frameworks */,
+				8F9B150E2EF310AD00F02658 /* Lottie in Frameworks */,
+				8F9B15112EF310B600F02658 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +148,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F9B154B2EF4470200F02658 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		956FBF042ED9A974008FD178 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +162,8 @@
 				956FBF0F2ED9A974008FD178 /* metaforaapp */,
 				956FBF1D2ED9A976008FD178 /* metaforaappTests */,
 				956FBF272ED9A976008FD178 /* metaforaappUITests */,
+				8F9B153F2EF446EF00F02658 /* NotificationsServiceExtension */,
+				8F9B154B2EF4470200F02658 /* Frameworks */,
 				956FBF0E2ED9A974008FD178 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +174,7 @@
 				956FBF0D2ED9A974008FD178 /* metaforaapp.app */,
 				956FBF1A2ED9A976008FD178 /* metaforaappTests.xctest */,
 				956FBF242ED9A976008FD178 /* metaforaappUITests.xctest */,
+				8F9B153E2EF446EF00F02658 /* NotificationsServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +182,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8F9B153D2EF446EF00F02658 /* NotificationsServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F9B15462EF446EF00F02658 /* Build configuration list for PBXNativeTarget "NotificationsServiceExtension" */;
+			buildPhases = (
+				8F9B153A2EF446EF00F02658 /* Sources */,
+				8F9B153B2EF446EF00F02658 /* Frameworks */,
+				8F9B153C2EF446EF00F02658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8F9B153F2EF446EF00F02658 /* NotificationsServiceExtension */,
+			);
+			name = NotificationsServiceExtension;
+			packageProductDependencies = (
+				8F9B154C2EF4470200F02658 /* FirebaseMessaging */,
+			);
+			productName = NotificationsServiceExtension;
+			productReference = 8F9B153E2EF446EF00F02658 /* NotificationsServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		956FBF0C2ED9A974008FD178 /* metaforaapp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 956FBF2E2ED9A976008FD178 /* Build configuration list for PBXNativeTarget "metaforaapp" */;
@@ -108,10 +212,12 @@
 				956FBF092ED9A974008FD178 /* Sources */,
 				956FBF0A2ED9A974008FD178 /* Frameworks */,
 				956FBF0B2ED9A974008FD178 /* Resources */,
+				8F9B154A2EF446EF00F02658 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F9B15442EF446EF00F02658 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				956FBF0F2ED9A974008FD178 /* metaforaapp */,
@@ -119,6 +225,10 @@
 			);
 			name = metaforaapp;
 			packageProductDependencies = (
+				8F9B150D2EF310AD00F02658 /* Lottie */,
+				8F9B15102EF310B600F02658 /* AppsFlyerLib */,
+				8F9B15132EF310BE00F02658 /* ConfettiSwiftUI */,
+				8F9B15162EF3111900F02658 /* FirebaseMessaging */,
 			);
 			productName = metaforaapp;
 			productReference = 956FBF0D2ED9A974008FD178 /* metaforaapp.app */;
@@ -177,9 +287,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2610;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
+					8F9B153D2EF446EF00F02658 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					956FBF0C2ED9A974008FD178 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
@@ -202,6 +315,12 @@
 			);
 			mainGroup = 956FBF042ED9A974008FD178;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F9B150C2EF310AD00F02658 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				8F9B150F2EF310B600F02658 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				8F9B15122EF310BE00F02658 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				8F9B15152EF3111900F02658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 956FBF0E2ED9A974008FD178 /* Products */;
 			projectDirPath = "";
@@ -210,11 +329,19 @@
 				956FBF0C2ED9A974008FD178 /* metaforaapp */,
 				956FBF192ED9A976008FD178 /* metaforaappTests */,
 				956FBF232ED9A976008FD178 /* metaforaappUITests */,
+				8F9B153D2EF446EF00F02658 /* NotificationsServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F9B153C2EF446EF00F02658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		956FBF0B2ED9A974008FD178 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +366,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F9B153A2EF446EF00F02658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		956FBF092ED9A974008FD178 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +397,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8F9B15442EF446EF00F02658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F9B153D2EF446EF00F02658 /* NotificationsServiceExtension */;
+			targetProxy = 8F9B15432EF446EF00F02658 /* PBXContainerItemProxy */;
+		};
 		956FBF1C2ED9A976008FD178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 956FBF0C2ED9A974008FD178 /* metaforaapp */;
@@ -276,6 +415,66 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8F9B15472EF446EF00F02658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationsServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationsServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunnaiirair.Lunair.NotificationsServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8F9B15482EF446EF00F02658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationsServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationsServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunnaiirair.Lunair.NotificationsServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		956FBF2C2ED9A976008FD178 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -405,22 +604,25 @@
 				CODE_SIGN_ENTITLEMENTS = metaforaapp/metaforaapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7X47AV9RN8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = metaforaapp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Lunair Gravity";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Lunar Gravity may request permission to access limited device identifiers to support internal analytics and maintain app quality. This information is used solely to evaluate app performance, fix issues, and improve user interactions. We do not use this data for cross-app tracking, user profiling, or third-party advertising purposes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lunnaiirair.Lunair;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -445,22 +647,25 @@
 				CODE_SIGN_ENTITLEMENTS = metaforaapp/metaforaapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7X47AV9RN8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = metaforaapp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Lunair Gravity";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Lunar Gravity may request permission to access limited device identifiers to support internal analytics and maintain app quality. This information is used solely to evaluate app performance, fix issues, and improve user interactions. We do not use this data for cross-app tracking, user profiling, or third-party advertising purposes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lunnaiirair.Lunair;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -564,6 +769,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F9B15462EF446EF00F02658 /* Build configuration list for PBXNativeTarget "NotificationsServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F9B15472EF446EF00F02658 /* Debug */,
+				8F9B15482EF446EF00F02658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		956FBF082ED9A974008FD178 /* Build configuration list for PBXProject "metaforaapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -601,6 +815,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F9B150C2EF310AD00F02658 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		8F9B150F2EF310B600F02658 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+		8F9B15122EF310BE00F02658 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+		8F9B15152EF3111900F02658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F9B150D2EF310AD00F02658 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F9B150C2EF310AD00F02658 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		8F9B15102EF310B600F02658 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F9B150F2EF310B600F02658 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		8F9B15132EF310BE00F02658 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F9B15122EF310BE00F02658 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+		8F9B15162EF3111900F02658 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F9B15152EF3111900F02658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8F9B154C2EF4470200F02658 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F9B15152EF3111900F02658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 956FBF052ED9A974008FD178 /* Project object */;
 }
